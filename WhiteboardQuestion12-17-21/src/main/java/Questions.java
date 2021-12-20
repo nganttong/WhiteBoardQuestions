@@ -14,4 +14,20 @@ public class Questions {
         }
         //TODO -Look at j and k loop structure, tweak something small on both
         //done
+
+
+    //solution from Jack Harris to solve problem
+    public Integer solveWithMath(Integer[] input){
+        Integer sum = 0;
+        for(int i = 0; i < input.length; i++)
+            sum += input[i] * (i + 1) * (input.length - i);
+        return sum;
+    }
+
+    public Long solveWithLong(Integer[] input){
+        Long sum = 0l;
+        for(int i = 0; i < input.length; i++)
+            sum += input[i] * (i + 1) * (input.length - i);
+        return sum;
+    }
 }
